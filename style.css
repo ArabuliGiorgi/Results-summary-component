@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1, p{
+    font-family: "Hanken Grotesk", sans-serif;
+}
+body{
+    min-height: 100vh;
+}
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+.result-div{
+    background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
+    box-shadow: 0px 30px 60px 0px #3D6CEC26;
+    border-radius: 0 0 32px 32px;
+    padding: 24px 57px 40px 57px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+#result-heading{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23.45px;
+    text-align: center;
+    color: #CAC9FF;
+}
+.result-numb-div{
+    width: 140px;
+    height: 140px;
+    background: linear-gradient(180deg, #4D21C9 0%, rgba(63, 33, 201, 0.641249) 35.88%, rgba(37, 33, 201, 0) 100%, rgba(37, 33, 201, 0) 100%);
+    margin: 0 auto;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#num1{
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 72px;
+    text-align: center;
+    color: #FFFFFF;
+}
+#num2{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20.85px;
+    color: #CAC9FF;
+    opacity: 51.68%;
+}
+#text-heading{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31.27px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+}
+#text{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20.85px;
+    text-align: center;
+    color: #CAC9FF;
+}
+
+.summary-div{
+    padding: 24px 30px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+#summary-heading{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23.45px;
+    color: #303B59;
+}
+.info-divs{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.four-divs{
+    padding: 17px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+}
+.d1{
+    height: 100%;
+    display: flex;
+    gap: 12px;
+}
+.d1 img{
+    height: 100%;
+}
+.d1 h1{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20.85px;
+}
+.d2 h1{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20.85px;
+    color: #303B59;
+}
+#info-div1{
+    background: rgba(255, 85, 85, 0.05);
+}
+#info-div2{
+    background: rgba(255, 178, 30, 0.05);
+}
+#info-div3{
+    background: rgba(0, 187, 143, 0.05);
+}
+#info-div4{
+    background: rgba(17, 37, 214, 0.05);
+}
+.button-div{
+    width: 100%;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #303B59;
+    border-radius: 128px;
+}
+.button-div:active{
+    background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);
+}
+.button-div h1{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23.45px;
+    color: white;
+}
+
+@media only screen and (min-width: 740px){
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ECF2FF;
+    }
+    main{
+        width: 736px;
+        height: 512px;
+        flex-direction: row;
+        border-radius: 32px;
+    }
+    .result-div{
+        border-radius: 32px;
+        padding: 38px 54px;
+        height: 100%;
+        gap: 28px;
+    }
+    #result-heading{
+        font-size: 24px;
+        line-height: 32.27px;
+        margin-bottom: 7px;
+    }
+    .result-numb-div{
+        width: 200px;
+        height: 200px;
+    }
+    #num1{
+        font-size: 72px;
+    }
+    #num2{
+        font-size: 18px;
+        line-height: 23.45px;
+    }
+    #text-heading{
+        font-size: 32px;
+        line-height: 41.7px;
+        margin-bottom: 14px;
+    }
+    #text{
+        font-size: 18px;
+        line-height: 23.45px;
+    }
+
+    .summary-div{
+        width: 100%;
+        padding: 38px 40px;
+        gap: 28px;
+    }
+    #summary-heading{
+        font-size: 24px;
+        line-height: 31.27px;
+    }
+    .info-divs{
+        margin-bottom: 13px;
+    }
+    .d1 h1{
+        font-size: 18px;
+        line-height: 23.45px;
+    }
+    .d2 h1{
+        font-size: 18px;
+        line-height: 23.45px;
+    }
+    .button-div:hover{
+        cursor: pointer;
+    }
+}
